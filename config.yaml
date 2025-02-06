@@ -1,0 +1,12 @@
+llm:
+  model_name: "mistral"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  image_model: "llava"
+
+vector_db:
+  provider: "faiss"
+  index_name: "vlm_chatbot_index"
+
+paths:
+  embeddings_dir: "vectorstore"
+  

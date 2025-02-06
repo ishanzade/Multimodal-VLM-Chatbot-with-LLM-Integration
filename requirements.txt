@@ -1,0 +1,12 @@
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-core==0.3.29
+langchain-groq==0.2.2
+langchain-text-splitters==0.3.5
+openai
+streamlit==1.41.1
+sentence-transformers==3.4.0
+Markdown==3.6
+ollama==0.4.7
+transformers==4.48.1pyt
+langchain-ollama==0.2.3
