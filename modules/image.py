@@ -17,7 +17,7 @@ def process_image(image_bytes, question=None):
             model=config["llm"]["image_model"],
             messages=[{
                 "role": "user",
-                "content": f"Answer the following question using the information from the image: {question}",
+                "content": f"Think on the query first and then give Answer the following question using the information from the image, including objects, context, and background.: {question}",
                 "images": [image_path]
             }]
         )
@@ -28,7 +28,7 @@ def process_image(image_bytes, question=None):
             model=config["llm"]["image_model"],
             messages=[{
                 "role": "user",
-                "content": "Provide a detailed description of the image, including objects, context, and background.",
+                "content": "Think and give detailed description of the image and also including objects, context, and background.",
                 "images": [image_path]
             }]
         )
@@ -36,3 +36,5 @@ def process_image(image_bytes, question=None):
 
     os.unlink(image_path)
     return result
+
+    

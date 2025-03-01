@@ -8,5 +8,4 @@ streamlit==1.41.1
 sentence-transformers==3.4.0
 Markdown==3.6
 ollama==0.4.7
-transformers==4.48.1pyt
 langchain-ollama==0.2.3
